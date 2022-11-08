@@ -12,6 +12,11 @@ This project is a free open source Project that uses React and Bootstrap on the 
 ```
 $ git clone
 
+$ cd personal-blog
+
+$ npm install
+
+```
 ## Available Scripts
 
 In the project directory, you can run:
