@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Personal Blog Using React and Bootstrap (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a free open source Project that uses React and Bootstrap on the frontend and Node.js, Express and MongoDB on the backend. This project is a personal blog that allows us to write and post articles.
+## Features
+
+- User Authentication
+- Create Articles
+
+
+## Installation
+
+```
+$ git clone
 
 ## Available Scripts
 
