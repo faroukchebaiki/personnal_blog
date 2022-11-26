@@ -1,10 +1,15 @@
 import './App.css';
+import Top from './Components/Top';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1> react 18</h1>
-    </div>
+    <>
+      <Top />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
