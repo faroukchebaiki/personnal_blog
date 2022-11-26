@@ -1,7 +1,7 @@
 export default function Top() {
     return (
         <header className="">
-            <nav className="nav">
+            <nav className="nav ontop">
                 <a href='#A'><h2 className="">Logo</h2></a>
                 <div>
                     <ul className="">
