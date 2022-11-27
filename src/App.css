@@ -1,3 +1,4 @@
+
 .nav{
     border: 1px solid black;
     color: black;
@@ -5,13 +6,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-self: center;
+    margin: 0.5em auto;
+    width: 90vw;
+    height: 3vh;
 }
 .ontop{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    background-color: white;
     z-index: 1;
+}
+.onbottom{
+    transform: translate(0.5%, 10%);
 }
 .nav a{
     color: black;

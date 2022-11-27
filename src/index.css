@@ -17,3 +17,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.burger{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .burger{
+    display: block;
+  }
+  .buttons{
+    
+  }
+}
