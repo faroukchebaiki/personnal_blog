@@ -1,9 +1,6 @@
 import { Cross as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
-
-
-
 export default function Top() {
     const [isOpen, setOpen] = useState(false)
     return (
@@ -11,7 +8,7 @@ export default function Top() {
             <nav className="nav ontop">
                 <a href='#A'><h3 className="">Logo</h3></a>
                 <div >
-                    <ul className="buttons ${className}">
+                    <ul className=" ">
                         <li><a href="#A">Home</a></li>
                         <li><a href="#b">Main</a></li>
                         <li><a href="#c">About</a></li>

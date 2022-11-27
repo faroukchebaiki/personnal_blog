@@ -27,22 +27,17 @@ code {
   }
   .burger{
     display: block;
-    z-index: 2;
   }
   .nav ul{
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 60vw;
     background-color: white;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-    
+    margin-top: 150px;
+    border: 1px solid black;
   }
   .slideIn{
     transition: transform 0.5s ease-in;
@@ -60,6 +55,6 @@ code {
     }
   }
   .nav ul li{
-    margin: 0.5em 0;
+    margin:0;
   }
 }
