@@ -8,7 +8,7 @@ export default function Top() {
             <nav className="nav ontop">
                 <a href='#A'><h3 className="">Logo</h3></a>
                 <div >
-                    <ul className=" ">
+                    <ul className="phone">
                         <li><a href="#A">Home</a></li>
                         <li><a href="#b">Main</a></li>
                         <li><a href="#c">About</a></li>
@@ -19,11 +19,10 @@ export default function Top() {
                         toggled={isOpen} 
                         toggle={setOpen}
                         onToggle={toggled=> {
-                            let className = 'buttons';
                             if (toggled) {
-                            className += ' slideIn';
+                            document.querySelector('.phone').style.display = 'flex';
                             } else {
-                            // close a menu
+                            document.querySelector('.phone').style.display = 'none';
                             }
                             }}
                     />

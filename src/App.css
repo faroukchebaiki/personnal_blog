@@ -31,9 +31,19 @@
     color: #ccc;
 }
 .nav ul{
-    display: flex;
+    
     list-style: none;
 }
 .nav ul li{
     margin-left: 20px;
+}
+/* main section*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ccc;
 }

@@ -1,8 +1,8 @@
 export default function Main() {
     return (
-        <div className="">
+        <section className="main">
 
 
-        </div>
+        </section>
     );
 }
