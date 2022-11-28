@@ -4,7 +4,10 @@ export default function Blogs() {
         <div className="right">
             <Post />
             <Post />
-
+            <Post />
+            <Post />
+            <Post />
+            <Post />
         </div>
     );
 }
