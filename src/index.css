@@ -59,7 +59,7 @@ code {
 .burger{
   display: none;
 }
-/* main section*/
+/* main section START*/
 .main{
   display: flex;
   flex-direction: row;
@@ -69,6 +69,7 @@ code {
   width: 100vw;
   background-color: #ccc;
 }
+/* The Aside section START*/
 .left{
   display: flex;
   flex-direction: column;
@@ -78,6 +79,8 @@ code {
   height: 100%;
   background-color: rgb(105, 37, 37);
 }
+/* The Aside section END*/
+/* The main content START*/
 .right{
   display: flex;
   flex-direction: column;
@@ -86,19 +89,47 @@ code {
   width: 80vw;
   height: 100%;
   background-color: rgb(40, 51, 145);
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
 }
+.post{
+  width: 80vw;
+  height: 20em;
+  background-color: red;
+  border: 1px solid black;
+}
+/* The main content END*/
+/* main section END*/
+.footer{
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100vw;
+  background-color: #ccc;
+}
+/*Tablet Stuff*/
+@media screen and (max-width: 900px) {
+  .left{
+    display: none;
+  }
+  .right{
+    width: 100vw;
+  }
+  .footer{
+    display: flex;
+  }
+}
+
+/*Phone Stuff*/
 @media screen and (max-width: 600px) {
   .nav{
     width: 90vw;
   }
   .burger{
     display: block;
-  }
-  .show{
-    display: b;
-  }
-  .hide{
-    display: none;
   }
   .nav ul{
     flex-direction: column;
