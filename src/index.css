@@ -56,20 +56,37 @@ code {
 .nav ul li{
   margin-left: 20px;
 }
+.burger{
+  display: none;
+}
 /* main section*/
 .main{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
   background-color: #ccc;
 }
-.burger{
-  display: none;
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 100%;
+  background-color: rgb(105, 37, 37);
 }
-
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(40, 51, 145);
+}
 @media screen and (max-width: 600px) {
   .nav{
     width: 90vw;
