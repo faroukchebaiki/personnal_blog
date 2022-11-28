@@ -17,19 +17,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.nav{
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  margin: 0.5em auto;
+  width: 80vw;
+  height: 3vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+.ontop{
+  
+  z-index: 1;
+}
+.onbottom{
+  transform: translate(0.5%, 10%);
+}
+.nav a{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav a:hover{
+  color: #ccc;
+}
+.nav ul{
+  display: flex;
+  list-style: none;
+}
+.nav ul li{
+  margin-left: 20px;
+}
+/* main section*/
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ccc;
+}
 .burger{
   display: none;
 }
 
 @media screen and (max-width: 600px) {
   .nav{
-    width: 95vw;
+    width: 90vw;
   }
   .burger{
     display: block;
   }
+  .show{
+    display: b;
+  }
+  .hide{
+    display: none;
+  }
   .nav ul{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -41,21 +95,7 @@ code {
   .nav ul{
     display: none;
   }
-  .slideIn{
-    transition: transform 0.5s ease-in;
-    transform: translateY(0%);
-  }
-  @keyframes sladein {
-    0% {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
   
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
   .nav ul li{
     margin:0;
   }
