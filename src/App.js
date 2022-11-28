@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <>
-      <Top />
+        {/* <Top />*/}
       <Main />
       <Footer />
     </>
