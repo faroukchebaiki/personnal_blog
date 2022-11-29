@@ -6,7 +6,7 @@ export default function Top() {
     return (
         <header className="">
             <nav className="nav ontop">
-                <a href='#A'><h3 className="">Logo</h3></a>
+                <a href='#A'><h3 className="logo">Farouk Blog</h3></a>
                 <div >
                     <ul className="phone">
                         <li><a href="#A">Home</a></li>
