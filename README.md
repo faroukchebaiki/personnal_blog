@@ -1,6 +1,6 @@
-# Personal Blog Using React and Bootstrap (Frontend)
+# Personal Blog Using React  (Frontend)
 
-This project is a free open source Project that uses React and Bootstrap on the frontend and Node.js, Express and MongoDB on the backend. This project is a personal blog that allows us to write and post articles.
+This project is a free open source Project that uses React  on the frontend and Node.js, Express and MongoDB on the backend. This project is a personal blog that allows us to write and post articles.
 ## Features
 
 - User Authentication
