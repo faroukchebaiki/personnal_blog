@@ -81,11 +81,26 @@ code {
 .left{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
   width: 20vw;
   height: 100%;
   border-right: 2px solid black;
+}
+.writer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+.profile{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: url('https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg');
 }
 /* The Aside section END*/
 /* The main content START*/
