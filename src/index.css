@@ -13,6 +13,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; 
+  overflow-y: scroll;
 }
 
 code {
@@ -81,19 +83,24 @@ code {
 .left{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 20vw;
   height: 100%;
   border-right: 2px solid black;
 }
 .writer{
+  margin-top:30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: auto;
+}
+.writer p{
+  margin: 0.5em;
+  text-align: center;
+
 }
 .profile{
   width: 10em;
@@ -101,6 +108,11 @@ code {
   border-radius: 50%;
   border: 2px solid black;
   background-image: url('https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg');
+}
+.copyright{
+  display:flex;
+  justify-content:center;
+  font-weight: 600;
 }
 /* The Aside section END*/
 /* The main content START*/
@@ -138,30 +150,51 @@ code {
 }
 /* The main content END*/
 /* main section END*/
+
 .footer{
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 40vh;
-  width: 100vw;
-  background-color: #ccc;
+  display:none;
 }
 
 
-
-
-
 /*Tablet Stuff*/ 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  .main{
+    height: auto;
+    
+  }
   .left{
     display: none;
   }
   .right{
-    width: 100vw;
+    width:100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: auto;
   }
   .footer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .writer{
+    margin-top:3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 400px;
+    border-top: 2px solid black;
+  }
+  .profile{
+    margin-top:2em;  
+  }
+  .writer p{
+    margin: 1em;
+    text-align: center;
+  }
+  .copyright{
+    margin-top:7em;
+    margin-bottom: 2em;
   }
 }
 
@@ -194,9 +227,11 @@ code {
   }
   .right{
     overflow-y: hidden;
+    overflow-x: hidden;
     height: auto;
   }
   .post{
     width: 90vw;
   }
+  
 }
