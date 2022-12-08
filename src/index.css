@@ -21,7 +21,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.nav{
+.header{
   border: 2px solid black;
   color: black;
   padding: 10px;
@@ -38,35 +38,30 @@ code {
   right: 0;
   background-color: white;
 }
-.ontop{
-  
-  z-index: 2;
-}
-.onbottom{
-  z-index: 1;
-  transform: translate(6px, 6px);
-}
 .logo{
   font-family: 'Silkscreen';
   color: black;
   text-decoration: none;
 }
-.nav a{
+nav a{
   color: black;
   text-decoration: none;
   font-size: 15px;
 }
-.nav a:hover{
+nav a:hover{
   color: #ccc;
 }
-.nav ul{
+nav ul{
   display: flex;
   list-style: none;
 }
-.nav ul li{
+nav ul li{
   margin-left: 20px;
 }
 .burger{
+  display: none;
+}
+.phonenav{
   display: none;
 }
 /* main section START*/
@@ -130,6 +125,7 @@ code {
   height: 20em;
   border: 2px solid black;
   background-color: white;
+  position: relative;
 }
 .posttext{
   display: flex;
@@ -140,13 +136,11 @@ code {
   margin: 1em;
 }
 .toppost{
-  position: relative;
   top: -6px;
-  left: -6px;
+  left: -8px;
 }
 .bottompost{
   margin-top: 2em;
-  position: relative;
 }
 /* The main content END*/
 /* main section END*/
@@ -200,13 +194,13 @@ code {
 
 /*Phone Stuff*/
 @media screen and (max-width: 600px) {
-  .nav{
+  .header{
     width: 90vw;
   }
   .burger{
     display: block;
   }
-  .nav ul{
+  nav ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -215,11 +209,11 @@ code {
     margin-top: 150px;
     border: 2px solid black;
   }
-  .nav ul{
+  nav ul{
     display: none;
   }
   
-  .nav ul li{
+  nav ul li{
     margin:0;
   }
   .main{
