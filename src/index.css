@@ -1,231 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen');
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono');
-*{
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
-  margin: 0;
-  font-family: 'DM Mono',  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden; 
-  overflow-y: scroll;
+a {
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.header{
-  border: 2px solid black;
-  color: black;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-self: center;
-  margin: 0.5em auto;
-  width: 80vw;
-  height: 3vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-}
-.logo{
-  font-family: 'Silkscreen';
-  color: black;
-  text-decoration: none;
-}
-nav a{
-  color: black;
-  text-decoration: none;
-  font-size: 15px;
-}
-nav a:hover{
-  color: #ccc;
-}
-nav ul{
-  display: flex;
-  list-style: none;
-}
-nav ul li{
-  margin-left: 20px;
-}
-.burger{
-  display: none;
-}
-.phonenav{
-  display: none;
-}
-/* main section START*/
-.main{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 93vh;
-  width: 100vw;
-  margin-top: 7vh;
-}
-/* The Aside section START*/
-.left{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 20vw;
-  height: 100%;
-  border-right: 2px solid black;
-}
-.writer{
-  margin-top:30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
-.writer p{
-  margin: 0.5em;
-  text-align: center;
-
-}
-.profile{
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
-  border: 2px solid black;
-  background-image: url('https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg');
-}
-.copyright{
-  display:flex;
-  justify-content:center;
-  font-weight: 600;
-}
-/* The Aside section END*/
-/* The main content START*/
-.right{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80vw;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.post{
-  width: 30em;
-  height: 20em;
-  border: 2px solid black;
-  background-color: white;
-  position: relative;
-}
-.posttext{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  height: 100%;
-  margin: 1em;
-}
-.toppost{
-  top: -6px;
-  left: -8px;
-}
-.bottompost{
-  margin-top: 2em;
-}
-/* The main content END*/
-/* main section END*/
-
-.footer{
-  display:none;
+li {
+    list-style: none;
 }
 
+.container {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    position: fixed;
+}
+header{
+    padding-top: 1em;
+}
+/* Navbar */
 
-/*Tablet Stuff*/ 
-@media screen and (max-width: 1000px) {
-  .main{
-    height: auto;
-    
-  }
-  .left{
-    display: none;
-  }
-  .right{
-    width:100vw;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    height: auto;
-  }
-  .footer{
+
+.nav {
     display: flex;
-    flex-direction: column;
     align-items: center;
-  }
-  .writer{
-    margin-top:3em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    max-width: 400px;
-    border-top: 2px solid black;
-  }
-  .profile{
-    margin-top:2em;  
-  }
-  .writer p{
-    margin: 1em;
-    text-align: center;
-  }
-  .copyright{
-    margin-top:7em;
-    margin-bottom: 2em;
-  }
+    justify-content: space-between;
+    height: 7vh;
+}
+.top{
+    top: -6px;
+    left: -8px;
+}
+.nav__brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
 }
 
-/*Phone Stuff*/
-@media screen and (max-width: 600px) {
-  .header{
-    width: 90vw;
-  }
-  .burger{
-    display: block;
-  }
-  nav ul{
-    flex-direction: column;
+.nav__menu {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 60vw;
-    background-color: white;
-    margin-top: 150px;
-    border: 2px solid black;
-  }
-  nav ul{
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.nav__link {
+    color: black;
+}
+
+.toggler__icon {
+    cursor: pointer;
     display: none;
-  }
-  
-  nav ul li{
-    margin:0;
-  }
-  .main{
-    height: auto;
-  }
-  .right{
-    overflow-y: hidden;
-    overflow-x: hidden;
-    height: auto;
-  }
-  .post{
-    width: 90vw;
-  }
-  
+}
+
+.toggler__icon div {
+    width: 25px;
+    height: 2px;
+    background: #ddd;
+    margin: 5px 0px;
+    transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .toggler__icon {
+        display: block;
+    }
+    .nav__menu {
+        position: fixed;
+        background: teal;
+        flex-direction: column;
+        top: 10vh;
+        width: 50%;
+        height: 90vh;
+        right: 0;
+        transform: translateX(100%);
+        transition: 0.5s ease;
+    }
+}
+
+.nav__collapse {
+    transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+.toggle .line__1 {
+    transform: translate(-5px, 7px) rotate(-45deg);
+}
+.toggle .line__2 {
+    opacity: 0;
+}
+.toggle .line__3 {
+    transform: translate(-5px, -7px) rotate(45deg);
 }

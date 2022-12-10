@@ -1,14 +1,11 @@
-import Topa from './Components/Topa';
-import Main from './Components/Main';
-import Footer from './Components/Footer';
+import Navbar from "./Components/navbar";
 
-function App() {
-  return (
-    <>
-      <Topa />
-  
-    </>
-  );
-}
+const App = () => {
+    return (
+        <>
+            <Navbar />
+        </>
+    );
+};
 
 export default App;
