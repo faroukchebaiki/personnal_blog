@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className="container">
                 <nav className="nav container top">
                     <a href="#" className="nav__brand">
-                        Logo
+                        Blog
                     </a>
                     <ul className={collapse}>
                         {navItems.map((item) => (

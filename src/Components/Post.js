@@ -1,7 +1,7 @@
 export default function post() {
     return (
         <div className='post bottompost'>
-            <div className="post toppost">
+            <div className="post top">
                 <div className="posttext" >
                     <h6>September 5, 2008</h6>
                     <h1>My First Post</h1>
