@@ -4,6 +4,7 @@ const App = () => {
     return (
         <>
             <Navbar />
+            <div className="stuff"></div>
         </>
     );
 };

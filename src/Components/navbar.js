@@ -21,7 +21,7 @@ const Navbar = () => {
     };
 
     return (
-        <header>
+        <header className="header">
             <div className="container">
                 <nav className="nav container top">
                     <a href="#" className="nav__brand">
