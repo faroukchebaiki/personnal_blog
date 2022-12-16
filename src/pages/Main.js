@@ -1,5 +1,5 @@
-import Aside from "./Aside";
-import Blogs from "./Blogs";
+import Aside from "../Components/Aside";
+import Blogs from "../Components/Blogs";
 export default function Main() {
     return (
         <section className="main">

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+
 import { getTopNav } from "../data/navbars";
 
 const Navbar = () => {
@@ -30,9 +32,9 @@ const Navbar = () => {
                     <ul className={collapse}>
                         {navItems.map((item) => (
                             <li key={item.id} className="nav__item">
-                                <a href={item.href} className="nav__link">
+                                <NavLink to={item.link} className="nav__link">
                                     {item.label}
-                                </a>
+                                </NavLink>
                             </li>
                         ))}
                     </ul>
