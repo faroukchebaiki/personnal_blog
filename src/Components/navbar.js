@@ -26,13 +26,13 @@ const Navbar = () => {
         <header className="header">
             <div className="container">
                 <nav className="nav container top">
-                    <a href="#" className="nav__brand">
+                    <NavLink to="/" className="nav__brand">
                         Blog
-                    </a>
+                    </NavLink>
                     <ul className={collapse}>
                         {navItems.map((item) => (
                             <li key={item.id} className="nav__item">
-                                <NavLink to={item.link} className="nav__link">
+                                <NavLink onClick={onToggle} to={item.link} className="nav__link">
                                     {item.label}
                                 </NavLink>
                             </li>
