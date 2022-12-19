@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import Notfound from "./pages/Notfound";
 
 import Navbar from "./Components/navbar";
-import Footer from "./Components/Footer";
+
 const App = () => {
     return (
         <>
@@ -17,7 +17,7 @@ const App = () => {
                 <Route path="Contact" element={<Contact />} />
                 <Route path="*" element={<Notfound />} />
             </Routes>
-            <Footer />
+            
         </>
     );
 };

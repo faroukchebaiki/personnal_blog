@@ -259,6 +259,9 @@ li {
         width: 30em;
         height: 20em;
     }
+    .posttext h1{
+        font-size: 2em;
+    }
     .bottompost{
         margin-left: 0;
     }
